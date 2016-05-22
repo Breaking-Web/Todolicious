@@ -65,6 +65,5 @@ if(isset($_SESSION['email']))
 </div>
 <!--End Registration Area-->
 </div>
-<a href="include/create_tables.php">Create Tables</a>
 </body>
 </html>
