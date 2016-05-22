@@ -1,5 +1,9 @@
 <?php
 require_once 'include/init.php';//Initialization File to Establish Database connection
+if(!isset($_SESSION['email'];))
+{
+	header("location:index.php");
+}
 $email=$_SESSION['email'];
 $sql="SELECT id,todo,status FROM todos where user='".$email."'";
 $result = mysqli_query($conn,$sql);//Select all the todo items for the logged in users.
