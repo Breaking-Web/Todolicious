@@ -1,0 +1,178 @@
+/*Hide Horizontal Scroll Bar*/
+html { overflow-x: hidden; }
+
+/*Change Background Color*/
+body{
+	background-color: #5bbd93;
+}
+
+/*Set a Font and Color for Body and Input Field*/
+body, input{
+	font:1em "Lato";
+	color: #363639;
+}
+
+/*Remove the outline from the input box when it`s selected*/
+input:focus{
+	outline: none;
+}
+
+/*Set a dashed underline for the links*/
+a{
+	text-decoration: none;
+	border-bottom: 1px dashed;
+}
+/*Set the font and styling for the Header*/
+.header{
+	font-size: 3em;
+	font-family: "Architects Daughter";
+	margin: 0 0 10px 0;
+	margin: 10px;
+	text-align: center;
+	width: 100%;
+	color: white;
+}
+/*Set the font and styling for the Logout Link*/
+.logout{
+	font-size: 1.5em;
+	font-family: "Architects Daughter";
+	margin: 0 0 10px 0;
+	margin: 10px;
+	text-align: center;
+	width: 100%;
+	color: white;
+	text-decoration: none;
+}
+
+/*ToDo List Container Styling*/
+.container{
+	background-color: #fff;
+	margin: 20px auto;
+	width: 100%;
+	max-width: 500px;
+	padding: 20px;
+	border-radius: 10px;
+	box-shadow: 3px 3px 0 rgb(0,0,0,0.4);
+	box-sizing: border-box;
+}
+
+/* Items */
+.items{
+	margin:0;
+	padding:0;
+	list-style-type: none;
+
+}
+
+/*Set a dashed border below every ToDo item and the Input Field*/
+.items li, .input{
+	border:0;
+	border-bottom: 1px dashed #ccc;
+	padding: 15px 0;
+}
+
+/*Add a done marker before the ToDos that are marked as done*/
+.items .done::before {
+	content: '____';
+	color: transparent;
+	background-image: url('../images/mark_before.png');
+}
+
+/*Set width of the input class*/
+.input{
+	width: 100%;
+}
+
+
+/* Submit Button */
+.submit{
+	width: 100%;
+	background-color: #fff;
+	padding: 5px 10px;
+	border:1px solid #ddd;
+	margin-top: 10px;
+	box-shadow: 3px 3px 0 #ddd;
+}
+
+.submit:hover{
+	transform: translate(1px,2px);
+}
+
+/* Mark Button */
+.done-btn{
+	background-color: Transparent;
+    background-repeat:no-repeat;
+    border: none;
+    cursor:pointer;
+    overflow: hidden;
+    outline:none;
+    opacity: 0.5;
+    float: right;
+}
+
+/*Change opacity to 1 when someone hovers over the Mark Button*/
+.done-btn:hover{
+	opacity: 1;
+}
+
+/* Delete Button */
+.delete{
+	background-color: Transparent;
+    background-repeat:no-repeat;
+    border: none;
+    cursor:pointer;
+    overflow: hidden;
+    outline:none;
+    opacity: 0.5;
+    float: right;
+}
+
+/*Change opacity to 1 when someone hovers over the Delete Button*/
+.delete:hover{
+	opacity: 1;
+}
+
+/*Class to center text*/
+.center-text{
+	text-align: center;
+}
+/*Class to make text italic and use Architects Daughter font*/
+.stylize-text{
+	font-size: 2em;
+	font-family: "Architects Daughter";
+	margin: 0 0 10px 0;
+	margin: 0;
+	text-align: center;
+	width: 100%;
+}
+
+/*Login/Register Links on the home page*/
+.tab{
+	border:1px solid #000;
+	border-radius: 5px;
+	padding: 5px 5px;
+	margin-bottom: 10px;
+	display: inline;
+	margin-right: 5px;
+	width: 25%;
+	cursor: pointer;
+	background-color: white;
+}
+/*When someone hovers over the Login/Register Links on the home page*/
+.tab:hover{
+	background-color: #5bbd93;
+	color: white;
+	border-color: #5bbd93;
+}
+
+/*Set Background Color for the ToDo item that is being deleted using JQuery*/
+.sel{
+	background-color: #d5ede6;
+}
+
+
+/*Warning Styling*/
+.warning{
+	color: red;
+	text-align: center;
+}
