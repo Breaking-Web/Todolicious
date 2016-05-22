@@ -13,5 +13,4 @@ require_once 'init.php';    //Initialization File to Setablish Database connecti
         echo '2';
     }
     mysqli_close($conn);//close database connection
-}
 ?>
