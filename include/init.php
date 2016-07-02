@@ -1,5 +1,18 @@
 <?php
 session_start();
-//Create Database Connection
-$conn= new mysqli('ec2-54-243-201-19.compute-1.amazonaws.com:5432', 'ldkcsswbmnnwbn', 'ymBcKZsY7fncQRfs3lwjQ7q2J-','d56f05eq9vi53g') or die('Could not connect: ' . mysql_error());
+$servername = "";  //change your server address here
+$username = "";  //enter the database username here
+$password = "";  //enter password here
+$database = "";  //enter database name here
+
+/*------------------------------------------------------Do not change anything below this line------------------------------------------------------*/
+
+// Create connection
+$conn = mysqli_connect($servername, $username, $password, $database);
+
+// Check connection
+if ($conn->connect_error) {
+	echo "Connection Failed";
+    die("Connection failed: " . mysqli_error($conn));
+} 
 ?>
